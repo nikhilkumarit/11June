@@ -1,3 +1,6 @@
-System.out.println("Enter a number : ");
-        int num = sc.nextInt();
-        System.out.println();
+if(reverse.equals(str)){
+            System.out.println("String is palindrome : "+str);
+        }
+        else{
+            System.out.println("String is not palindrome.");
+        }

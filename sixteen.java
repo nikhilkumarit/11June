@@ -3,12 +3,14 @@ public class sixteen {
 
         // String Palindrome check.
 
-        String str = "racecar";
+        String str = "madam";
         String reverse = "";
-        for(int i = str.length() - 1;i >= 0;i--){
+        for(int i = str.length()-1;i >= 0;i--){
             reverse = reverse + str.charAt(i);
+            System.out.println(reverse);
         }
-        if(str.equals(reverse)){
+
+        if(reverse.equals(str)){
             System.out.println("String is palindrome : "+str);
         }
         else{
