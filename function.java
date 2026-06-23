@@ -79,23 +79,50 @@ public class function {
 
     // Q.10
 
+    // public static void fibonacci(int num){
+    //     int a = 0;
+    //     int b = 1;
+    //     int c;
+    //     System.out.print(+a+ " " +b+ " ");
 
-    
-    public static void fibonacci(int num){
-        int a = 0;
-        int b = 1;
-        int c;
-        System.out.print(+a+ " " +b+ " ");
+    //     for(int i = 2;i < num;i++){
+    //         c = a + b;
+    //         System.out.print(c+ " ");
+    //         a = b;
+    //         b = c;
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     fibonacci(7);
+        
+    // }
 
-        for(int i = 2;i < num;i++){
-            c = a + b;
-            System.out.print(c+ " ");
-            a = b;
-            b = c;
+    // Recursion
+
+    // public static int sumofnNumber(int num){
+    //     if(num == 1){
+    //         return 1;
+    //     }
+    //     return num + sumofnNumber(num - 1);
+    // }
+    // public static void main(String[] args) {
+    //     int result = sumofnNumber(5);
+    //     System.out.println(result);
+    // }
+
+    // Recursion se Fibonacci!
+
+    public static int fibonacci(int num){
+        if(num == 0){
+            return 0;
         }
+        if(num == 1){
+            return 1;
+        }
+        return fibonacci(num - 1) + fibonacci(num - 2);
     }
     public static void main(String[] args) {
-        fibonacci(7);
-        
+        int result = fibonacci(5);
+        System.out.println(result);
     }
 }
