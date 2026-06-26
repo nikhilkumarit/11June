@@ -21,6 +21,7 @@ public class BankAccount {
         }
     }
 
+    
     void checkbalance() {
         System.out.println("Balance : " + balance);
     }
