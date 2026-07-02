@@ -1,6 +1,6 @@
 class Person {
-    private String name;
-    private int age;
+    public String name;
+    public int age;
 
     // Constructor
     Person(String name, int age) {
