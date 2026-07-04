@@ -1,32 +1,37 @@
-class Vehicle{
-     String brand;
-     int speed;
+class Vehicle {
+    private String brand;
+    private int speed;
 
-    Vehicle(String brand, int speed){
+    Vehicle(String brand, int speed) {
         this.brand = brand;
         this.speed = speed;
     }
 
-    void getBrand(){
-        System.out.println("Brand : "+brand);
+    String getBrand() {
+        return brand;
     }
-    void getSpeed(){
-        System.out.println("Speed : "+speed);
+
+    int getSpeed() {
+        return speed;
     }
-    void display(){
-        System.out.println("Brand : "+brand);
-        System.out.println("Speed : "+speed);
+
+    void display() {
+        System.out.println("Brand : " + brand);
+        System.out.println("Speed : " + speed);
     }
 }
-class Bike extends Vehicle{
+
+class Bike extends Vehicle {
     private String type;
-    Bike(String brand, int speed, String type){
+
+    Bike(String brand, int speed, String type) {
         super(brand, speed);
         this.type = type;
     }
-    void display(){
+
+    void display() {
         super.display();
-        System.out.println("Type : "+type);
+        System.out.println("Type : " + type);
     }
 }
 
@@ -35,5 +40,5 @@ public class InnerVehicle {
         Bike b1 = new Bike("Yamaha", 299, "Sports");
         b1.display();
     }
-    
+
 }
