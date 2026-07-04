@@ -2,7 +2,7 @@ class Newperson {
     String name;
 
     void greet() {
-        System.out.println("Hello, mera naam" + name + " hai!");
+        System.out.println("Hello, mera naam " + name + " hai!");
     }
 }
 
