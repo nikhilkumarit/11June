@@ -61,9 +61,10 @@ public class BankAccount {
             System.out.println("Invaild withdrew.");
         }
     }
-    public void display(){
-        System.out.println("Account Holder : "+accountHolder);
-        System.out.println("Balance : "+balance);
+
+    public void display() {
+        System.out.println("Account Holder : " + accountHolder);
+        System.out.println("Balance : " + balance);
     }
 
     public static void main(String[] args) {
@@ -71,6 +72,6 @@ public class BankAccount {
         acc1.display();
         acc1.withdrew(5000);
         acc1.deposite(10000);
-        System.out.println("Current Balance : "+acc1.getBalance());
+        System.out.println("Current Balance : " + acc1.getBalance());
     }
 }
