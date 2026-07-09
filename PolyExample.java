@@ -7,8 +7,13 @@ class Person {
         this.age = age;
     }
 
-    String getName() { return name; }
-    int getAge() { return age; }
+    String getName() {
+        return name;
+    }
+
+    int getAge() {
+        return age;
+    }
 
     void display() {
         System.out.println("Name : " + name);
@@ -87,7 +92,7 @@ public class PolyExample {
         Person p1 = new Student("Rahul", 18, "XYZ School", 10);
         Person p2 = new Teacher("Mrs. Gupta", 40, "Science", 70000);
 
-        p1.work();  // Student ka work() chalega!
-        p2.work();  // Teacher ka work() chalega!
+        p1.work(); // Student ka work() chalega!
+        p2.work(); // Teacher ka work() chalega!
     }
 }
